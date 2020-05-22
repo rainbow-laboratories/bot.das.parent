@@ -1,0 +1,20 @@
+spring:
+  profiles: default
+  application:
+    name: "DSA Bot"
+  server:
+    port: 22222
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dsa_bot
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  jpa:
+    hibernate:
+      generate-ddl: true
+      ddl-auto: update
+
+rainbowlabs:
+  dsabot:
+    token: "NTUxMDQxNTc2ODYwOTA5NTY4.Xr2M0A.c5xRkh5X4KaaK5TyW8ERmCwf-PE"
